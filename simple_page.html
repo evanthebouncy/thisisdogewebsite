@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+   COLLABORATORS:
+   I googled extensively. All the codes are self-contained though
+   No third party libraries used   
+  -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Simple Profile Page</title>
+    <link type="text/css" href="simple_page.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script type="text/javascript" src="simple_page.js"></script>
+  </head>
+
+  <body>
+    <!--i only want to use the center of the page, 60%-->
+    <div class="page_content">
+
+      <!--navigation should be on top of the page-->
+      <div id="top_nav_bar">
+        <div id="home" class="left navi">
+          <img class="displayed" src="images/home_icon.png">
+          <span class="nav_txt"></span>
+        </div>
+        <div id="friend" class="left navi">
+          <img class="displayed" src="images/friend_icon.png">
+          <span class="nav_txt"></span>
+        </div>
+        <div id="messages" class="left navi">
+          <img class="displayed" src="images/message_icon.png">
+          <span class="nav_txt"></span>
+        </div>
+        <div id="notification" class="left navi">
+          <img class="displayed" src="images/notification_icon.png">
+          <span class="nav_txt"></span>
+        </div>
+        <div id="search" class="left navi">
+          <input id="search_bar" class="left" value=""> </input>
+          <img class="displayed left" src="images/search_icon.png">
+          </br>
+          <span class="nav_txt"></span>
+        </div>
+
+        <div id="logout" class="right navi">
+          <img class="displayed" src="images/logout_icon.png">
+          <span class="nav_txt"></span>
+        </div>
+        <div id="setting" class="right navi">
+          <img class="displayed" src="images/setting_icon.png">
+          <span class="nav_txt"></span>
+        </div>
+      </div>
+
+      <!--content on the bottom of the page-->
+      <div id="bottom_content" class="">
+
+      <!--on left display user information-->
+        <div id="left_profile_info" class="left">
+          <div id="prof_pic" class="user_info">
+            <img class="displayed" src="images/dog_profile.png" width="150" height="150">
+          </div>
+          <div id="prof_name">
+            DOG
+          </div>
+          <div id="about" class="user_info">
+            from: Planet Woof
+          </div>
+          <div id="follower" class="user_info">
+            followers
+          </div>
+          <div id="following" class="user_info">
+            following
+          </div>
+        </div>
+
+      <!--on right display the tweets/updates-->
+        <div id="right_msgs" class="right">
+
+          <div id="new_update">
+            <div id="greeting" class="heading">
+              What are you up to DOG?
+            </div>
+            <div id="new_post_body"> 
+              <img class="displayed left" src="images/dog_profile.png" width="50" height="50">
+              <input type="text" maxlength="140" class="longerinput left"></input>
+              <button id="post_new_update">
+                post
+              </button>
+            </div>
+          </div>
+
+        <div id="update_history">
+          <div id="" class="heading">
+            What DOG has been up to
+          </div>
+
+          <div id="past_updates">
+
+            <div id="1" class="past_update">
+              <div class="update_content">
+                <img class="displayed left" src="images/dog_profile.png" width="40" height="40">
+                <div class="left">
+                  The doggy biscuit just now is delicious!
+                </div>
+                <div class="likes left">
+                </div>
+              </div>
+
+              <div class="indent_wrap">
+                <div class="comments">
+                  <div id="comments_1" class="old_comments">
+                    <div id="" class="old_comment">
+                      <img class="displayed left" src="images/dog_profile.png" width="30" height="30">
+                      <div class="left">
+                        I've had better
+                      </div>
+                      <div class="likes left">
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div id="" class="new_comment">
+                    <img class="displayed left" src="images/dog_profile.png" width="30" height="30">
+                    <input type="text" maxlength="140" class="longerinput left"></input>
+                    <button class="post_new_comment">
+                      comment
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="0" class="past_update">
+              <div class="update_content">
+                <img class="displayed left" src="images/dog_profile.png" width="40" height="40">
+                <div class="left">
+                  Hello, This is Dog
+                </div>
+                <div class="likes green left">
+                </div>
+              </div>
+
+              <div class="indent_wrap">
+                <div class="comments">
+                  <div id="comments_0" class="old_comments">
+                    <div id="" class="old_comment">
+                      <img class="displayed left" src="images/dog_profile.png" width="30" height="30">
+                      <div class="left">
+                        Hi there dog!
+                      </div>
+                      <div class="likes left">
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div id="cur_focus" class="new_comment">
+                    <img class="displayed left" src="images/dog_profile.png" width="30" height="30">
+                    <input type="text" class="longerinput left" maxlength="140"></input>
+                    <button class="post_new_comment">
+                      comment
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
